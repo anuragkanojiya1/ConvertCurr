@@ -1,0 +1,20 @@
+{
+    "name": "ConvertCurr Dev Container",
+    "image": "nginx:alpine",
+    "forwardPorts": [
+    8080
+    ],
+    "customizations": {
+    "vscode": {
+        "settings": {
+        "html.autoClosingTags": true,
+        "javascript.suggest.autoImports": true
+        },
+        "extensions": [
+        "ms-azuretools.vscode-docker",
+        "mhutchie.git-graph"
+        ]
+    }
+    },
+    "postCreateCommand": "echo 'Dev Container for ConvertCurr created!'"
+}
